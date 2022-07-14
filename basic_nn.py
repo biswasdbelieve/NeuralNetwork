@@ -59,7 +59,7 @@ class NeuralNetwork():
         # print('input=> \n {} \n weights => \n {} '.format(
         #     inputs, self.synaptic_weights))
         output = self.sigmoid(np.dot(inputs, self.synaptic_weights))
-        # print('dot => {} \n '.format(np.dot(inputs, self.synaptic_weights)))
+        print('dot => {} \n '.format(np.dot(inputs, self.synaptic_weights)))
         return output
 
 
