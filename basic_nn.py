@@ -1,3 +1,4 @@
+# Basic code courtesy jonasbostoen
 import numpy as np
 
 
@@ -42,7 +43,7 @@ class NeuralNetwork():
             # Less confident weights are adjusted more through the nature of the function
             adjustments = np.dot(training_inputs.T, error *
                                  self.sigmoid_derivative(output))
-
+            # Calculate using learning rate
             # adjustments = np.dot(training_inputs.T, learning_rate *
             #                      self.sigmoid_derivative(output))
 
