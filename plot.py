@@ -8,11 +8,11 @@ def sigmoid(x):
     val = 1/(1+np.exp(-x))
     return val
 
-output = sigmoid(1)
+output = sigmoid(input)
 
 print(output)
-# plt.plot(input,output)
-# plt.xlabel("Input")
-# plt.ylabel("Output")
-# plt.title("Sigmoid Function")
-# plt.show()
+plt.plot(input,output)
+plt.xlabel("Input")
+plt.ylabel("Output")
+plt.title("Sigmoid Function")
+plt.show()
